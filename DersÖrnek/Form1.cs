@@ -28,9 +28,10 @@ namespace DersÖrnek
 
             if (reading.Read())
             {
-                this.Hide();
-                Form1 obj1 = new Form1();
+                Form2 obj1 = new Form2();
                 obj1.Show();
+                this.Visible = false;
+                this.Hide();
             }
             else
             {
@@ -39,12 +40,6 @@ namespace DersÖrnek
                 textBox2.Text = null;
             }
             baglan.Close();
-        }
-
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-    
-        }
-    }
-    
+        }      
+    }   
 }
